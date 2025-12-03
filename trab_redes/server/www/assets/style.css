@@ -1,0 +1,113 @@
+:root {
+  --bg1: #0f172a;
+  --accent1: #6d28d9;
+  --accent2: #3b82f6;
+  --accent3: #9333ea;
+  --light: #dbeafe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/assets/naldin.webp');
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  background-position: center;  
+  background-attachment: fixed;
+
+  font-family: 'Poppins', sans-serif;
+  color: var(--light);
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+}
+
+.glow {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 12px rgba(109,40,217,0.6));
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-top: 0.5rem;
+}
+
+.sub2 {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+/* CONTENT */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 18px rgba(59,130,246,0.15);
+}
+
+.card h2 {
+  color: var(--accent2);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+
+.download-btn {
+  background: linear-gradient(90deg, var(--accent2), var(--accent1));
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: 0 0 12px rgba(59,130,246,0.25);
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(109,40,217,0.45);
+}
+
+
+footer {
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
